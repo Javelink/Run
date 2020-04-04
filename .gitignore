@@ -1,0 +1,9 @@
+.DS_Store
+.svn
+*~
+/build
+/Pods
+Podfile.lock
+duplication.xml
+Coverage
+test-reports

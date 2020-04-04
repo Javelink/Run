@@ -1,0 +1,1579 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		21F51E56932B93B432D3F724 /* Pods_RunWatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 767D3E389E9C6466DF0898CD /* Pods_RunWatch.framework */; };
+		6679AC383C1866C1ECAA0258 /* Pods_RunSiriUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3B02762B644AE544A66B15D /* Pods_RunSiriUI.framework */; };
+		68B3C78B8BF623A6E58CD0B3 /* Pods_RunApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19EDF96B7693795645AA9FF9 /* Pods_RunApp.framework */; };
+		6DC6D2F62E0421DF5CC66DB1 /* Pods_RunSiri.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58BCA67CF808F919D84AD4E7 /* Pods_RunSiri.framework */; };
+		C05ECE01F37EA6C7CD9F9AD7 /* Pods_RunSiriCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1AA57B701B7D52C41845B50 /* Pods_RunSiriCore.framework */; };
+		C23E46AF23C763EF0014F854 /* EndWorkoutIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23E46AD23C763EF0014F854 /* EndWorkoutIntentHandler.swift */; };
+		C23E46B023C763EF0014F854 /* StartWorkoutIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23E46AE23C763EF0014F854 /* StartWorkoutIntentHandler.swift */; };
+		C242EDA923C371E30000BE4E /* AppIntentVocabulary.plist in Resources */ = {isa = PBXBuildFile; fileRef = C242EDA823C371E30000BE4E /* AppIntentVocabulary.plist */; };
+		C267F08123C88FB100EB67BF /* TrainingInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DA7AD923BDFA4D00EF2E24 /* TrainingInterval.swift */; };
+		C267F08223C88FB100EB67BF /* TrainingSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DA7ADB23BDFAA800EF2E24 /* TrainingSession.swift */; };
+		C267F08323C88FB100EB67BF /* Training.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DA7AD623BDF9E200EF2E24 /* Training.swift */; };
+		C2B1BE9C23CF26D9005B2394 /* UIImage+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B1BE9B23CF26D9005B2394 /* UIImage+Utils.swift */; };
+		C2B1BF2123D05DA1005B2394 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2B1BF1F23D05DA1005B2394 /* Interface.storyboard */; };
+		C2B1BF2323D05DA2005B2394 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2B1BF2223D05DA2005B2394 /* Assets.xcassets */; };
+		C2B1BF2A23D05DA3005B2394 /* RunWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C2B1BF2923D05DA3005B2394 /* RunWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C2B1BF2F23D05DA3005B2394 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B1BF2E23D05DA3005B2394 /* InterfaceController.swift */; };
+		C2B1BF3123D05DA3005B2394 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B1BF3023D05DA3005B2394 /* ExtensionDelegate.swift */; };
+		C2B1BF3323D05DA3005B2394 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B1BF3223D05DA3005B2394 /* NotificationController.swift */; };
+		C2B1BF3523D05DA4005B2394 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2B1BF3423D05DA4005B2394 /* Assets.xcassets */; };
+		C2B1BF3A23D05DA4005B2394 /* RunWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C2B1BF1D23D05DA1005B2394 /* RunWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C2B1BF4423D060DF005B2394 /* TimerRunWatchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B1BF4323D060DF005B2394 /* TimerRunWatchController.swift */; };
+		C2B1BF4823D0AA4B005B2394 /* TrainingSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DA7ADB23BDFAA800EF2E24 /* TrainingSession.swift */; };
+		C2B1BF4923D0AA67005B2394 /* TrainingInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DA7AD923BDFA4D00EF2E24 /* TrainingInterval.swift */; };
+		C2B1BF4A23D0AA69005B2394 /* Training.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DA7AD623BDF9E200EF2E24 /* Training.swift */; };
+		C2B1BF4B23D0AE90005B2394 /* TimerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E7CA9223AD122A00A6DF62 /* TimerManager.swift */; };
+		C2B1BF4C23D0AEAF005B2394 /* TrainingSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DA7ADB23BDFAA800EF2E24 /* TrainingSession.swift */; };
+		C2B1BF4D23D0AEB3005B2394 /* TrainingInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DA7AD923BDFA4D00EF2E24 /* TrainingInterval.swift */; };
+		C2B1BF4E23D0AEB6005B2394 /* Training.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DA7AD623BDF9E200EF2E24 /* Training.swift */; };
+		C2B1BF5023D0AECB005B2394 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EE2F7323ABE51200E30395 /* LocationManager.swift */; };
+		C2B1BF5123D0AECB005B2394 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EE2F7323ABE51200E30395 /* LocationManager.swift */; };
+		C2B1BF5223D0AECD005B2394 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EE2F7323ABE51200E30395 /* LocationManager.swift */; };
+		C2B850E423D5C304004FAD9D /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2B850E323D5C304004FAD9D /* HealthKit.framework */; };
+		C2BFB3AD23C73B5F0070F7AA /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BFB3AC23C73B5F0070F7AA /* IntentHandler.swift */; };
+		C2BFB3B523C73B5F0070F7AA /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2BFB3B423C73B5F0070F7AA /* IntentsUI.framework */; };
+		C2BFB3B823C73B5F0070F7AA /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BFB3B723C73B5F0070F7AA /* IntentViewController.swift */; };
+		C2BFB3BB23C73B5F0070F7AA /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2BFB3B923C73B5F0070F7AA /* MainInterface.storyboard */; };
+		C2BFB3BF23C73B5F0070F7AA /* RunSiriUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C2BFB3B323C73B5F0070F7AA /* RunSiriUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C2BFB3C223C73B5F0070F7AA /* RunSiri.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C2BFB3AA23C73B5F0070F7AA /* RunSiri.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C2BFB3D223C7612A0070F7AA /* RunSiriCore.h in Headers */ = {isa = PBXBuildFile; fileRef = C2BFB3D023C7612A0070F7AA /* RunSiriCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C2BFB3D523C7612A0070F7AA /* RunSiriCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2BFB3CE23C7612A0070F7AA /* RunSiriCore.framework */; };
+		C2BFB3D623C7612A0070F7AA /* RunSiriCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C2BFB3CE23C7612A0070F7AA /* RunSiriCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C2D335B123ABDBE500D303A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D335B023ABDBE500D303A6 /* AppDelegate.swift */; };
+		C2D335B323ABDBE500D303A6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D335B223ABDBE500D303A6 /* SceneDelegate.swift */; };
+		C2D335B523ABDBE500D303A6 /* RunViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D335B423ABDBE500D303A6 /* RunViewController.swift */; };
+		C2D335B823ABDBE500D303A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2D335B623ABDBE500D303A6 /* Main.storyboard */; };
+		C2D335BD23ABDBE600D303A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2D335BC23ABDBE600D303A6 /* Assets.xcassets */; };
+		C2D335C023ABDBE600D303A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2D335BE23ABDBE600D303A6 /* LaunchScreen.storyboard */; };
+		C2D335CA23ABDC0600D303A6 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D335C923ABDC0600D303A6 /* HealthKit.framework */; };
+		C2D335D323ABDD3500D303A6 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D335D223ABDD3500D303A6 /* TabBarController.swift */; };
+		C2D335D623ABDDD100D303A6 /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D335D423ABDDD100D303A6 /* Storyboards.swift */; };
+		C2D335D723ABDDD100D303A6 /* UIViewController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D335D523ABDDD100D303A6 /* UIViewController+Utils.swift */; };
+		C2DA7ACB23BDE06900EF2E24 /* HealthAssistant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DA7ACA23BDE06900EF2E24 /* HealthAssistant.swift */; };
+		C2DA7ACE23BDE4B600EF2E24 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DA7ACD23BDE4B500EF2E24 /* HistoryViewController.swift */; };
+		C2DA7AD023BDE4CC00EF2E24 /* History.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2DA7ACF23BDE4CC00EF2E24 /* History.storyboard */; };
+		C2DA7ADE23BE070F00EF2E24 /* TrainingDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DA7ADD23BE070F00EF2E24 /* TrainingDataStore.swift */; };
+		C2DA7AE023BE2F2B00EF2E24 /* HKBloodType+StringRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DA7ADF23BE2F2B00EF2E24 /* HKBloodType+StringRepresentation.swift */; };
+		C2E7CA9323AD122A00A6DF62 /* TimerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E7CA9223AD122A00A6DF62 /* TimerManager.swift */; };
+		C2EE2F6E23ABE08A00E30395 /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EE2F6D23ABE08A00E30395 /* HealthKitManager.swift */; };
+		C2EE2F7023ABE1E100E30395 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EE2F6F23ABE1E100E30395 /* ProfileViewController.swift */; };
+		C2EE2F7223ABE1F700E30395 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2EE2F7123ABE1F700E30395 /* Profile.storyboard */; };
+		C2EE2F7423ABE51200E30395 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EE2F7323ABE51200E30395 /* LocationManager.swift */; };
+		C2EE2F7623ACC45C00E30395 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2EE2F7523ACC45C00E30395 /* MapKit.framework */; };
+		C2EE2F7823ACC4EB00E30395 /* UIView+utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EE2F7723ACC4EB00E30395 /* UIView+utils.swift */; };
+		C2EE2F7C23AD08CC00E30395 /* TimerRunViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EE2F7B23AD08CC00E30395 /* TimerRunViewController.swift */; };
+		C2EE2F7E23AD08D800E30395 /* TimerRun.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2EE2F7D23AD08D800E30395 /* TimerRun.storyboard */; };
+		C348816123B36BE400AF8292 /* HKBiologicalSex+StringRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C348816023B36BE400AF8292 /* HKBiologicalSex+StringRepresentation.swift */; };
+		C348816323B36C6600AF8292 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C348816223B36C6600AF8292 /* UserProfile.swift */; };
+		C348816723B36D1F00AF8292 /* ProfileDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C348816623B36D1F00AF8292 /* ProfileDataStore.swift */; };
+		C37607D423B4C63700976570 /* UINavigation+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37607D323B4C63700976570 /* UINavigation+Utils.swift */; };
+		EE8ABF7CC234B1BB55EF993A /* Pods_RunWatch_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0ED3A362420B9A7C01452E2 /* Pods_RunWatch_Extension.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C2B1BF2B23D05DA3005B2394 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2D335A523ABDBE500D303A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C2B1BF2823D05DA3005B2394;
+			remoteInfo = "RunWatch Extension";
+		};
+		C2B1BF3823D05DA4005B2394 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2D335A523ABDBE500D303A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C2B1BF1C23D05DA1005B2394;
+			remoteInfo = RunWatch;
+		};
+		C2BFB3BD23C73B5F0070F7AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2D335A523ABDBE500D303A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C2BFB3B223C73B5F0070F7AA;
+			remoteInfo = RunSiriUI;
+		};
+		C2BFB3C023C73B5F0070F7AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2D335A523ABDBE500D303A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C2BFB3A923C73B5F0070F7AA;
+			remoteInfo = RunSiri;
+		};
+		C2BFB3D323C7612A0070F7AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2D335A523ABDBE500D303A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C2BFB3CD23C7612A0070F7AA;
+			remoteInfo = RunSiriCore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C2B1BF3E23D05DA4005B2394 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C2B1BF2A23D05DA3005B2394 /* RunWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2B1BF4223D05DA4005B2394 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				C2B1BF3A23D05DA4005B2394 /* RunWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2C13F7B23BF97060055ECFA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C2BFB3BF23C73B5F0070F7AA /* RunSiriUI.appex in Embed App Extensions */,
+				C2BFB3C223C73B5F0070F7AA /* RunSiri.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2C13F8F23BF9C290055ECFA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C2BFB3D623C7612A0070F7AA /* RunSiriCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		138DC8A1C832E54AC4E3367C /* Pods-RunSiriUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RunSiriUI.release.xcconfig"; path = "Target Support Files/Pods-RunSiriUI/Pods-RunSiriUI.release.xcconfig"; sourceTree = "<group>"; };
+		19EDF96B7693795645AA9FF9 /* Pods_RunApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RunApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22B9AF06AF37D98FB9CDDEA5 /* Pods-RunWatch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RunWatch.debug.xcconfig"; path = "Target Support Files/Pods-RunWatch/Pods-RunWatch.debug.xcconfig"; sourceTree = "<group>"; };
+		29625709A1BA4E9093353E31 /* Pods-RunSiriUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RunSiriUI.debug.xcconfig"; path = "Target Support Files/Pods-RunSiriUI/Pods-RunSiriUI.debug.xcconfig"; sourceTree = "<group>"; };
+		58BCA67CF808F919D84AD4E7 /* Pods_RunSiri.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RunSiri.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A9346EAF04A31B2F135EB35 /* Pods-RunWatch Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RunWatch Extension.release.xcconfig"; path = "Target Support Files/Pods-RunWatch Extension/Pods-RunWatch Extension.release.xcconfig"; sourceTree = "<group>"; };
+		5FE572DD69A10A1085445A2E /* Pods-RunSiri.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RunSiri.release.xcconfig"; path = "Target Support Files/Pods-RunSiri/Pods-RunSiri.release.xcconfig"; sourceTree = "<group>"; };
+		72E4771D9A10E493ADAEE36D /* Pods-RunApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RunApp.debug.xcconfig"; path = "Target Support Files/Pods-RunApp/Pods-RunApp.debug.xcconfig"; sourceTree = "<group>"; };
+		74C5F03B36D734BA26465231 /* Pods-RunWatch Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RunWatch Extension.debug.xcconfig"; path = "Target Support Files/Pods-RunWatch Extension/Pods-RunWatch Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		767D3E389E9C6466DF0898CD /* Pods_RunWatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RunWatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		80AD26D5DCD52ADC18D17514 /* Pods-RunSiri.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RunSiri.debug.xcconfig"; path = "Target Support Files/Pods-RunSiri/Pods-RunSiri.debug.xcconfig"; sourceTree = "<group>"; };
+		B1B1BAB4249EB502D1A05615 /* Pods-RunApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RunApp.release.xcconfig"; path = "Target Support Files/Pods-RunApp/Pods-RunApp.release.xcconfig"; sourceTree = "<group>"; };
+		C23E46AD23C763EF0014F854 /* EndWorkoutIntentHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndWorkoutIntentHandler.swift; sourceTree = "<group>"; };
+		C23E46AE23C763EF0014F854 /* StartWorkoutIntentHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartWorkoutIntentHandler.swift; sourceTree = "<group>"; };
+		C242EDA823C371E30000BE4E /* AppIntentVocabulary.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = AppIntentVocabulary.plist; sourceTree = "<group>"; };
+		C27BF13223D5B0BB0059910F /* RunWatch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RunWatch.entitlements; sourceTree = "<group>"; };
+		C27BF13323D5B0EA0059910F /* RunSiri.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RunSiri.entitlements; sourceTree = "<group>"; };
+		C2B1BE9B23CF26D9005B2394 /* UIImage+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Utils.swift"; sourceTree = "<group>"; };
+		C2B1BF1D23D05DA1005B2394 /* RunWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2B1BF2023D05DA1005B2394 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		C2B1BF2223D05DA2005B2394 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C2B1BF2423D05DA2005B2394 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2B1BF2923D05DA3005B2394 /* RunWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "RunWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2B1BF2E23D05DA3005B2394 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		C2B1BF3023D05DA3005B2394 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		C2B1BF3223D05DA3005B2394 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		C2B1BF3423D05DA4005B2394 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C2B1BF3623D05DA4005B2394 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2B1BF3723D05DA4005B2394 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		C2B1BF4323D060DF005B2394 /* TimerRunWatchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerRunWatchController.swift; sourceTree = "<group>"; };
+		C2B850E223D5C304004FAD9D /* RunWatch Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "RunWatch Extension.entitlements"; sourceTree = "<group>"; };
+		C2B850E323D5C304004FAD9D /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS6.1.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		C2BFB3AA23C73B5F0070F7AA /* RunSiri.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RunSiri.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2BFB3AC23C73B5F0070F7AA /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		C2BFB3AE23C73B5F0070F7AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2BFB3B323C73B5F0070F7AA /* RunSiriUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RunSiriUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2BFB3B423C73B5F0070F7AA /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		C2BFB3B723C73B5F0070F7AA /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		C2BFB3BA23C73B5F0070F7AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		C2BFB3BC23C73B5F0070F7AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2BFB3CE23C7612A0070F7AA /* RunSiriCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RunSiriCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2BFB3D023C7612A0070F7AA /* RunSiriCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunSiriCore.h; sourceTree = "<group>"; };
+		C2BFB3D123C7612A0070F7AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2D335AD23ABDBE500D303A6 /* RunApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2D335B023ABDBE500D303A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C2D335B223ABDBE500D303A6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C2D335B423ABDBE500D303A6 /* RunViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunViewController.swift; sourceTree = "<group>"; };
+		C2D335B723ABDBE500D303A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C2D335BC23ABDBE600D303A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C2D335BF23ABDBE600D303A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C2D335C123ABDBE600D303A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2D335C723ABDC0600D303A6 /* RunApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RunApp.entitlements; sourceTree = "<group>"; };
+		C2D335C923ABDC0600D303A6 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		C2D335D223ABDD3500D303A6 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		C2D335D423ABDDD100D303A6 /* Storyboards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
+		C2D335D523ABDDD100D303A6 /* UIViewController+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Utils.swift"; sourceTree = "<group>"; };
+		C2DA7ACA23BDE06900EF2E24 /* HealthAssistant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthAssistant.swift; sourceTree = "<group>"; };
+		C2DA7ACD23BDE4B500EF2E24 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		C2DA7ACF23BDE4CC00EF2E24 /* History.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = History.storyboard; sourceTree = "<group>"; };
+		C2DA7AD623BDF9E200EF2E24 /* Training.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Training.swift; sourceTree = "<group>"; };
+		C2DA7AD923BDFA4D00EF2E24 /* TrainingInterval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingInterval.swift; sourceTree = "<group>"; };
+		C2DA7ADB23BDFAA800EF2E24 /* TrainingSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingSession.swift; sourceTree = "<group>"; };
+		C2DA7ADD23BE070F00EF2E24 /* TrainingDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingDataStore.swift; sourceTree = "<group>"; };
+		C2DA7ADF23BE2F2B00EF2E24 /* HKBloodType+StringRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HKBloodType+StringRepresentation.swift"; sourceTree = "<group>"; };
+		C2E7CA9223AD122A00A6DF62 /* TimerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerManager.swift; sourceTree = "<group>"; };
+		C2EE2F6D23ABE08A00E30395 /* HealthKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
+		C2EE2F6F23ABE1E100E30395 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		C2EE2F7123ABE1F700E30395 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		C2EE2F7323ABE51200E30395 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		C2EE2F7523ACC45C00E30395 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		C2EE2F7723ACC4EB00E30395 /* UIView+utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+utils.swift"; sourceTree = "<group>"; };
+		C2EE2F7B23AD08CC00E30395 /* TimerRunViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerRunViewController.swift; sourceTree = "<group>"; };
+		C2EE2F7D23AD08D800E30395 /* TimerRun.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TimerRun.storyboard; sourceTree = "<group>"; };
+		C348816023B36BE400AF8292 /* HKBiologicalSex+StringRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HKBiologicalSex+StringRepresentation.swift"; sourceTree = "<group>"; };
+		C348816223B36C6600AF8292 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		C348816623B36D1F00AF8292 /* ProfileDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDataStore.swift; sourceTree = "<group>"; };
+		C37607D323B4C63700976570 /* UINavigation+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigation+Utils.swift"; sourceTree = "<group>"; };
+		E0ED3A362420B9A7C01452E2 /* Pods_RunWatch_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RunWatch_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E126BAA85182921D930868F7 /* Pods-RunSiriCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RunSiriCore.debug.xcconfig"; path = "Target Support Files/Pods-RunSiriCore/Pods-RunSiriCore.debug.xcconfig"; sourceTree = "<group>"; };
+		E1AA57B701B7D52C41845B50 /* Pods_RunSiriCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RunSiriCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3B02762B644AE544A66B15D /* Pods_RunSiriUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RunSiriUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5DD4BC027299FEADC407046 /* Pods-RunWatch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RunWatch.release.xcconfig"; path = "Target Support Files/Pods-RunWatch/Pods-RunWatch.release.xcconfig"; sourceTree = "<group>"; };
+		F6F1CDC4BB219ED580160044 /* Pods-RunSiriCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RunSiriCore.release.xcconfig"; path = "Target Support Files/Pods-RunSiriCore/Pods-RunSiriCore.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3589165D68668EC565044B1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21F51E56932B93B432D3F724 /* Pods_RunWatch.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2B1BF2623D05DA3005B2394 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2B850E423D5C304004FAD9D /* HealthKit.framework in Frameworks */,
+				EE8ABF7CC234B1BB55EF993A /* Pods_RunWatch_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2BFB3A723C73B5F0070F7AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DC6D2F62E0421DF5CC66DB1 /* Pods_RunSiri.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2BFB3B023C73B5F0070F7AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2BFB3B523C73B5F0070F7AA /* IntentsUI.framework in Frameworks */,
+				6679AC383C1866C1ECAA0258 /* Pods_RunSiriUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2BFB3CB23C7612A0070F7AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C05ECE01F37EA6C7CD9F9AD7 /* Pods_RunSiriCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2D335AA23ABDBE500D303A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2BFB3D523C7612A0070F7AA /* RunSiriCore.framework in Frameworks */,
+				C2EE2F7623ACC45C00E30395 /* MapKit.framework in Frameworks */,
+				C2D335CA23ABDC0600D303A6 /* HealthKit.framework in Frameworks */,
+				68B3C78B8BF623A6E58CD0B3 /* Pods_RunApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		67CD1DDA7995E70DB5EC4FB9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				72E4771D9A10E493ADAEE36D /* Pods-RunApp.debug.xcconfig */,
+				B1B1BAB4249EB502D1A05615 /* Pods-RunApp.release.xcconfig */,
+				80AD26D5DCD52ADC18D17514 /* Pods-RunSiri.debug.xcconfig */,
+				5FE572DD69A10A1085445A2E /* Pods-RunSiri.release.xcconfig */,
+				E126BAA85182921D930868F7 /* Pods-RunSiriCore.debug.xcconfig */,
+				F6F1CDC4BB219ED580160044 /* Pods-RunSiriCore.release.xcconfig */,
+				29625709A1BA4E9093353E31 /* Pods-RunSiriUI.debug.xcconfig */,
+				138DC8A1C832E54AC4E3367C /* Pods-RunSiriUI.release.xcconfig */,
+				22B9AF06AF37D98FB9CDDEA5 /* Pods-RunWatch.debug.xcconfig */,
+				E5DD4BC027299FEADC407046 /* Pods-RunWatch.release.xcconfig */,
+				74C5F03B36D734BA26465231 /* Pods-RunWatch Extension.debug.xcconfig */,
+				5A9346EAF04A31B2F135EB35 /* Pods-RunWatch Extension.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C2B1BF1E23D05DA1005B2394 /* RunWatch */ = {
+			isa = PBXGroup;
+			children = (
+				C27BF13223D5B0BB0059910F /* RunWatch.entitlements */,
+				C2B1BF1F23D05DA1005B2394 /* Interface.storyboard */,
+				C2B1BF2223D05DA2005B2394 /* Assets.xcassets */,
+				C2B1BF2423D05DA2005B2394 /* Info.plist */,
+			);
+			path = RunWatch;
+			sourceTree = "<group>";
+		};
+		C2B1BF2D23D05DA3005B2394 /* RunWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C2B850E223D5C304004FAD9D /* RunWatch Extension.entitlements */,
+				C2B1BF2E23D05DA3005B2394 /* InterfaceController.swift */,
+				C2B1BF3023D05DA3005B2394 /* ExtensionDelegate.swift */,
+				C2B1BF3223D05DA3005B2394 /* NotificationController.swift */,
+				C2B1BF4323D060DF005B2394 /* TimerRunWatchController.swift */,
+				C2B1BF3423D05DA4005B2394 /* Assets.xcassets */,
+				C2B1BF3623D05DA4005B2394 /* Info.plist */,
+				C2B1BF3723D05DA4005B2394 /* PushNotificationPayload.apns */,
+			);
+			path = "RunWatch Extension";
+			sourceTree = "<group>";
+		};
+		C2BFB3AB23C73B5F0070F7AA /* RunSiri */ = {
+			isa = PBXGroup;
+			children = (
+				C27BF13323D5B0EA0059910F /* RunSiri.entitlements */,
+				C2BFB3AC23C73B5F0070F7AA /* IntentHandler.swift */,
+				C23E46AE23C763EF0014F854 /* StartWorkoutIntentHandler.swift */,
+				C23E46AD23C763EF0014F854 /* EndWorkoutIntentHandler.swift */,
+				C2BFB3AE23C73B5F0070F7AA /* Info.plist */,
+			);
+			path = RunSiri;
+			sourceTree = "<group>";
+		};
+		C2BFB3B623C73B5F0070F7AA /* RunSiriUI */ = {
+			isa = PBXGroup;
+			children = (
+				C2BFB3B723C73B5F0070F7AA /* IntentViewController.swift */,
+				C2BFB3B923C73B5F0070F7AA /* MainInterface.storyboard */,
+				C2BFB3BC23C73B5F0070F7AA /* Info.plist */,
+			);
+			path = RunSiriUI;
+			sourceTree = "<group>";
+		};
+		C2BFB3CF23C7612A0070F7AA /* RunSiriCore */ = {
+			isa = PBXGroup;
+			children = (
+				C2DA7ADB23BDFAA800EF2E24 /* TrainingSession.swift */,
+				C2DA7AD923BDFA4D00EF2E24 /* TrainingInterval.swift */,
+				C2DA7AD623BDF9E200EF2E24 /* Training.swift */,
+				C2BFB3D023C7612A0070F7AA /* RunSiriCore.h */,
+				C2BFB3D123C7612A0070F7AA /* Info.plist */,
+			);
+			path = RunSiriCore;
+			sourceTree = "<group>";
+		};
+		C2D335A423ABDBE500D303A6 = {
+			isa = PBXGroup;
+			children = (
+				C2D335AF23ABDBE500D303A6 /* RunApp */,
+				C2BFB3AB23C73B5F0070F7AA /* RunSiri */,
+				C2BFB3B623C73B5F0070F7AA /* RunSiriUI */,
+				C2BFB3CF23C7612A0070F7AA /* RunSiriCore */,
+				C2B1BF1E23D05DA1005B2394 /* RunWatch */,
+				C2B1BF2D23D05DA3005B2394 /* RunWatch Extension */,
+				C2D335AE23ABDBE500D303A6 /* Products */,
+				C2D335C823ABDC0600D303A6 /* Frameworks */,
+				67CD1DDA7995E70DB5EC4FB9 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		C2D335AE23ABDBE500D303A6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C2D335AD23ABDBE500D303A6 /* RunApp.app */,
+				C2BFB3AA23C73B5F0070F7AA /* RunSiri.appex */,
+				C2BFB3B323C73B5F0070F7AA /* RunSiriUI.appex */,
+				C2BFB3CE23C7612A0070F7AA /* RunSiriCore.framework */,
+				C2B1BF1D23D05DA1005B2394 /* RunWatch.app */,
+				C2B1BF2923D05DA3005B2394 /* RunWatch Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C2D335AF23ABDBE500D303A6 /* RunApp */ = {
+			isa = PBXGroup;
+			children = (
+				C2D335C723ABDC0600D303A6 /* RunApp.entitlements */,
+				C2D335CB23ABDC7200D303A6 /* Source */,
+				C2D335BC23ABDBE600D303A6 /* Assets.xcassets */,
+				C2D335BE23ABDBE600D303A6 /* LaunchScreen.storyboard */,
+				C2D335C123ABDBE600D303A6 /* Info.plist */,
+				C242EDA823C371E30000BE4E /* AppIntentVocabulary.plist */,
+			);
+			path = RunApp;
+			sourceTree = "<group>";
+		};
+		C2D335C823ABDC0600D303A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C2B850E323D5C304004FAD9D /* HealthKit.framework */,
+				C2EE2F7523ACC45C00E30395 /* MapKit.framework */,
+				C2D335C923ABDC0600D303A6 /* HealthKit.framework */,
+				C2BFB3B423C73B5F0070F7AA /* IntentsUI.framework */,
+				19EDF96B7693795645AA9FF9 /* Pods_RunApp.framework */,
+				58BCA67CF808F919D84AD4E7 /* Pods_RunSiri.framework */,
+				E1AA57B701B7D52C41845B50 /* Pods_RunSiriCore.framework */,
+				E3B02762B644AE544A66B15D /* Pods_RunSiriUI.framework */,
+				767D3E389E9C6466DF0898CD /* Pods_RunWatch.framework */,
+				E0ED3A362420B9A7C01452E2 /* Pods_RunWatch_Extension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C2D335CB23ABDC7200D303A6 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				C2D335CC23ABDC7E00D303A6 /* Application */,
+				C348816523B36D0B00AF8292 /* DataStore */,
+				C348816423B36C7200AF8292 /* Models */,
+				C2D335CD23ABDC8E00D303A6 /* Flow */,
+				C2EE2F6C23ABE05C00E30395 /* Managers */,
+				C2D335CE23ABDC9E00D303A6 /* Extentions */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		C2D335CC23ABDC7E00D303A6 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				C2D335B023ABDBE500D303A6 /* AppDelegate.swift */,
+				C2D335B223ABDBE500D303A6 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		C2D335CD23ABDC8E00D303A6 /* Flow */ = {
+			isa = PBXGroup;
+			children = (
+				C2D335CF23ABDCF900D303A6 /* MainFlow */,
+				C2D335D023ABDD0300D303A6 /* RunFlow */,
+				C2D335D123ABDD1300D303A6 /* ProfileFlow */,
+				C2DA7ACC23BDE48800EF2E24 /* HistoryFlow */,
+			);
+			path = Flow;
+			sourceTree = "<group>";
+		};
+		C2D335CE23ABDC9E00D303A6 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				C2DA7AE123BE2F5D00EF2E24 /* HealthExtentions */,
+				C2D335D423ABDDD100D303A6 /* Storyboards.swift */,
+				C2D335D523ABDDD100D303A6 /* UIViewController+Utils.swift */,
+				C2EE2F7723ACC4EB00E30395 /* UIView+utils.swift */,
+				C37607D323B4C63700976570 /* UINavigation+Utils.swift */,
+				C2B1BE9B23CF26D9005B2394 /* UIImage+Utils.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		C2D335CF23ABDCF900D303A6 /* MainFlow */ = {
+			isa = PBXGroup;
+			children = (
+				C2D335D223ABDD3500D303A6 /* TabBarController.swift */,
+			);
+			path = MainFlow;
+			sourceTree = "<group>";
+		};
+		C2D335D023ABDD0300D303A6 /* RunFlow */ = {
+			isa = PBXGroup;
+			children = (
+				C2EE2F7923AD08A800E30395 /* StartRun */,
+				C2EE2F7A23AD08B500E30395 /* TimerRun */,
+			);
+			path = RunFlow;
+			sourceTree = "<group>";
+		};
+		C2D335D123ABDD1300D303A6 /* ProfileFlow */ = {
+			isa = PBXGroup;
+			children = (
+				C2EE2F6F23ABE1E100E30395 /* ProfileViewController.swift */,
+				C2EE2F7123ABE1F700E30395 /* Profile.storyboard */,
+			);
+			path = ProfileFlow;
+			sourceTree = "<group>";
+		};
+		C2DA7ACC23BDE48800EF2E24 /* HistoryFlow */ = {
+			isa = PBXGroup;
+			children = (
+				C2DA7ACD23BDE4B500EF2E24 /* HistoryViewController.swift */,
+				C2DA7ACF23BDE4CC00EF2E24 /* History.storyboard */,
+			);
+			path = HistoryFlow;
+			sourceTree = "<group>";
+		};
+		C2DA7AE123BE2F5D00EF2E24 /* HealthExtentions */ = {
+			isa = PBXGroup;
+			children = (
+				C348816023B36BE400AF8292 /* HKBiologicalSex+StringRepresentation.swift */,
+				C2DA7ADF23BE2F2B00EF2E24 /* HKBloodType+StringRepresentation.swift */,
+			);
+			path = HealthExtentions;
+			sourceTree = "<group>";
+		};
+		C2EE2F6C23ABE05C00E30395 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				C2EE2F6D23ABE08A00E30395 /* HealthKitManager.swift */,
+				C2EE2F7323ABE51200E30395 /* LocationManager.swift */,
+				C2E7CA9223AD122A00A6DF62 /* TimerManager.swift */,
+				C2DA7ACA23BDE06900EF2E24 /* HealthAssistant.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		C2EE2F7923AD08A800E30395 /* StartRun */ = {
+			isa = PBXGroup;
+			children = (
+				C2D335B423ABDBE500D303A6 /* RunViewController.swift */,
+				C2D335B623ABDBE500D303A6 /* Main.storyboard */,
+			);
+			path = StartRun;
+			sourceTree = "<group>";
+		};
+		C2EE2F7A23AD08B500E30395 /* TimerRun */ = {
+			isa = PBXGroup;
+			children = (
+				C2EE2F7B23AD08CC00E30395 /* TimerRunViewController.swift */,
+				C2EE2F7D23AD08D800E30395 /* TimerRun.storyboard */,
+			);
+			path = TimerRun;
+			sourceTree = "<group>";
+		};
+		C348816423B36C7200AF8292 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C348816223B36C6600AF8292 /* UserProfile.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C348816523B36D0B00AF8292 /* DataStore */ = {
+			isa = PBXGroup;
+			children = (
+				C348816623B36D1F00AF8292 /* ProfileDataStore.swift */,
+				C2DA7ADD23BE070F00EF2E24 /* TrainingDataStore.swift */,
+			);
+			path = DataStore;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C2BFB3C923C7612A0070F7AA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2BFB3D223C7612A0070F7AA /* RunSiriCore.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C2B1BF1C23D05DA1005B2394 /* RunWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2B1BF3F23D05DA4005B2394 /* Build configuration list for PBXNativeTarget "RunWatch" */;
+			buildPhases = (
+				BA0B4AA5427C5618DF215209 /* [CP] Check Pods Manifest.lock */,
+				C2B1BF1B23D05DA1005B2394 /* Resources */,
+				C2B1BF3E23D05DA4005B2394 /* Embed App Extensions */,
+				3589165D68668EC565044B1F /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C2B1BF2C23D05DA3005B2394 /* PBXTargetDependency */,
+			);
+			name = RunWatch;
+			productName = RunWatch;
+			productReference = C2B1BF1D23D05DA1005B2394 /* RunWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		C2B1BF2823D05DA3005B2394 /* RunWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2B1BF3B23D05DA4005B2394 /* Build configuration list for PBXNativeTarget "RunWatch Extension" */;
+			buildPhases = (
+				48D107BBE0B4F371D0DE8AC0 /* [CP] Check Pods Manifest.lock */,
+				C2B1BF2523D05DA3005B2394 /* Sources */,
+				C2B1BF2623D05DA3005B2394 /* Frameworks */,
+				C2B1BF2723D05DA3005B2394 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RunWatch Extension";
+			productName = "RunWatch Extension";
+			productReference = C2B1BF2923D05DA3005B2394 /* RunWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		C2BFB3A923C73B5F0070F7AA /* RunSiri */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2BFB3C623C73B5F0070F7AA /* Build configuration list for PBXNativeTarget "RunSiri" */;
+			buildPhases = (
+				D5481917F0F7C0FD9158284D /* [CP] Check Pods Manifest.lock */,
+				C2BFB3A623C73B5F0070F7AA /* Sources */,
+				C2BFB3A723C73B5F0070F7AA /* Frameworks */,
+				C2BFB3A823C73B5F0070F7AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RunSiri;
+			productName = RunSiri;
+			productReference = C2BFB3AA23C73B5F0070F7AA /* RunSiri.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		C2BFB3B223C73B5F0070F7AA /* RunSiriUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2BFB3C323C73B5F0070F7AA /* Build configuration list for PBXNativeTarget "RunSiriUI" */;
+			buildPhases = (
+				03E0D43AADA7D1E1A87589FC /* [CP] Check Pods Manifest.lock */,
+				C2BFB3AF23C73B5F0070F7AA /* Sources */,
+				C2BFB3B023C73B5F0070F7AA /* Frameworks */,
+				C2BFB3B123C73B5F0070F7AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RunSiriUI;
+			productName = RunSiriUI;
+			productReference = C2BFB3B323C73B5F0070F7AA /* RunSiriUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		C2BFB3CD23C7612A0070F7AA /* RunSiriCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2BFB3D723C7612A0070F7AA /* Build configuration list for PBXNativeTarget "RunSiriCore" */;
+			buildPhases = (
+				48B0699C0A317DDE42FED20F /* [CP] Check Pods Manifest.lock */,
+				C2BFB3C923C7612A0070F7AA /* Headers */,
+				C2BFB3CA23C7612A0070F7AA /* Sources */,
+				C2BFB3CB23C7612A0070F7AA /* Frameworks */,
+				C2BFB3CC23C7612A0070F7AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RunSiriCore;
+			productName = RunSiriCore;
+			productReference = C2BFB3CE23C7612A0070F7AA /* RunSiriCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C2D335AC23ABDBE500D303A6 /* RunApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2D335C423ABDBE600D303A6 /* Build configuration list for PBXNativeTarget "RunApp" */;
+			buildPhases = (
+				B33069347E34C259CBF3823D /* [CP] Check Pods Manifest.lock */,
+				C2D335A923ABDBE500D303A6 /* Sources */,
+				C2D335AA23ABDBE500D303A6 /* Frameworks */,
+				C2D335AB23ABDBE500D303A6 /* Resources */,
+				C2C13F7B23BF97060055ECFA /* Embed App Extensions */,
+				C2C13F8F23BF9C290055ECFA /* Embed Frameworks */,
+				C2B1BF4223D05DA4005B2394 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C2BFB3BE23C73B5F0070F7AA /* PBXTargetDependency */,
+				C2BFB3C123C73B5F0070F7AA /* PBXTargetDependency */,
+				C2BFB3D423C7612A0070F7AA /* PBXTargetDependency */,
+				C2B1BF3923D05DA4005B2394 /* PBXTargetDependency */,
+			);
+			name = RunApp;
+			productName = RunApp;
+			productReference = C2D335AD23ABDBE500D303A6 /* RunApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C2D335A523ABDBE500D303A6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Andrey Slota";
+				TargetAttributes = {
+					C2B1BF1C23D05DA1005B2394 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					C2B1BF2823D05DA3005B2394 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					C2BFB3A923C73B5F0070F7AA = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					C2BFB3B223C73B5F0070F7AA = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					C2BFB3CD23C7612A0070F7AA = {
+						CreatedOnToolsVersion = 11.3;
+						LastSwiftMigration = 1130;
+					};
+					C2D335AC23ABDBE500D303A6 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = C2D335A823ABDBE500D303A6 /* Build configuration list for PBXProject "RunApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C2D335A423ABDBE500D303A6;
+			productRefGroup = C2D335AE23ABDBE500D303A6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C2D335AC23ABDBE500D303A6 /* RunApp */,
+				C2BFB3A923C73B5F0070F7AA /* RunSiri */,
+				C2BFB3B223C73B5F0070F7AA /* RunSiriUI */,
+				C2BFB3CD23C7612A0070F7AA /* RunSiriCore */,
+				C2B1BF1C23D05DA1005B2394 /* RunWatch */,
+				C2B1BF2823D05DA3005B2394 /* RunWatch Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C2B1BF1B23D05DA1005B2394 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2B1BF2323D05DA2005B2394 /* Assets.xcassets in Resources */,
+				C2B1BF2123D05DA1005B2394 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2B1BF2723D05DA3005B2394 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2B1BF3523D05DA4005B2394 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2BFB3A823C73B5F0070F7AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2BFB3B123C73B5F0070F7AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2BFB3BB23C73B5F0070F7AA /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2BFB3CC23C7612A0070F7AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2D335AB23ABDBE500D303A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C242EDA923C371E30000BE4E /* AppIntentVocabulary.plist in Resources */,
+				C2EE2F7E23AD08D800E30395 /* TimerRun.storyboard in Resources */,
+				C2D335C023ABDBE600D303A6 /* LaunchScreen.storyboard in Resources */,
+				C2D335BD23ABDBE600D303A6 /* Assets.xcassets in Resources */,
+				C2EE2F7223ABE1F700E30395 /* Profile.storyboard in Resources */,
+				C2D335B823ABDBE500D303A6 /* Main.storyboard in Resources */,
+				C2DA7AD023BDE4CC00EF2E24 /* History.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03E0D43AADA7D1E1A87589FC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RunSiriUI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		48B0699C0A317DDE42FED20F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RunSiriCore-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		48D107BBE0B4F371D0DE8AC0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RunWatch Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B33069347E34C259CBF3823D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RunApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA0B4AA5427C5618DF215209 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RunWatch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5481917F0F7C0FD9158284D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RunSiri-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C2B1BF2523D05DA3005B2394 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2B1BF4A23D0AA69005B2394 /* Training.swift in Sources */,
+				C2B1BF4B23D0AE90005B2394 /* TimerManager.swift in Sources */,
+				C2B1BF3323D05DA3005B2394 /* NotificationController.swift in Sources */,
+				C2B1BF4423D060DF005B2394 /* TimerRunWatchController.swift in Sources */,
+				C2B1BF4923D0AA67005B2394 /* TrainingInterval.swift in Sources */,
+				C2B1BF3123D05DA3005B2394 /* ExtensionDelegate.swift in Sources */,
+				C2B1BF4823D0AA4B005B2394 /* TrainingSession.swift in Sources */,
+				C2B1BF2F23D05DA3005B2394 /* InterfaceController.swift in Sources */,
+				C2B1BF5023D0AECB005B2394 /* LocationManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2BFB3A623C73B5F0070F7AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2B1BF5123D0AECB005B2394 /* LocationManager.swift in Sources */,
+				C23E46AF23C763EF0014F854 /* EndWorkoutIntentHandler.swift in Sources */,
+				C2BFB3AD23C73B5F0070F7AA /* IntentHandler.swift in Sources */,
+				C23E46B023C763EF0014F854 /* StartWorkoutIntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2BFB3AF23C73B5F0070F7AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2BFB3B823C73B5F0070F7AA /* IntentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2BFB3CA23C7612A0070F7AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2B1BF5223D0AECD005B2394 /* LocationManager.swift in Sources */,
+				C267F08223C88FB100EB67BF /* TrainingSession.swift in Sources */,
+				C267F08323C88FB100EB67BF /* Training.swift in Sources */,
+				C267F08123C88FB100EB67BF /* TrainingInterval.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2D335A923ABDBE500D303A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2D335D623ABDDD100D303A6 /* Storyboards.swift in Sources */,
+				C2D335B523ABDBE500D303A6 /* RunViewController.swift in Sources */,
+				C2EE2F7423ABE51200E30395 /* LocationManager.swift in Sources */,
+				C2EE2F6E23ABE08A00E30395 /* HealthKitManager.swift in Sources */,
+				C2EE2F7C23AD08CC00E30395 /* TimerRunViewController.swift in Sources */,
+				C2E7CA9323AD122A00A6DF62 /* TimerManager.swift in Sources */,
+				C2DA7AE023BE2F2B00EF2E24 /* HKBloodType+StringRepresentation.swift in Sources */,
+				C2D335D723ABDDD100D303A6 /* UIViewController+Utils.swift in Sources */,
+				C2DA7ACB23BDE06900EF2E24 /* HealthAssistant.swift in Sources */,
+				C2D335B123ABDBE500D303A6 /* AppDelegate.swift in Sources */,
+				C2B1BF4D23D0AEB3005B2394 /* TrainingInterval.swift in Sources */,
+				C2DA7ADE23BE070F00EF2E24 /* TrainingDataStore.swift in Sources */,
+				C2B1BE9C23CF26D9005B2394 /* UIImage+Utils.swift in Sources */,
+				C2B1BF4E23D0AEB6005B2394 /* Training.swift in Sources */,
+				C348816723B36D1F00AF8292 /* ProfileDataStore.swift in Sources */,
+				C37607D423B4C63700976570 /* UINavigation+Utils.swift in Sources */,
+				C348816323B36C6600AF8292 /* UserProfile.swift in Sources */,
+				C2EE2F7023ABE1E100E30395 /* ProfileViewController.swift in Sources */,
+				C348816123B36BE400AF8292 /* HKBiologicalSex+StringRepresentation.swift in Sources */,
+				C2EE2F7823ACC4EB00E30395 /* UIView+utils.swift in Sources */,
+				C2DA7ACE23BDE4B600EF2E24 /* HistoryViewController.swift in Sources */,
+				C2D335D323ABDD3500D303A6 /* TabBarController.swift in Sources */,
+				C2B1BF4C23D0AEAF005B2394 /* TrainingSession.swift in Sources */,
+				C2D335B323ABDBE500D303A6 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C2B1BF2C23D05DA3005B2394 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C2B1BF2823D05DA3005B2394 /* RunWatch Extension */;
+			targetProxy = C2B1BF2B23D05DA3005B2394 /* PBXContainerItemProxy */;
+		};
+		C2B1BF3923D05DA4005B2394 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C2B1BF1C23D05DA1005B2394 /* RunWatch */;
+			targetProxy = C2B1BF3823D05DA4005B2394 /* PBXContainerItemProxy */;
+		};
+		C2BFB3BE23C73B5F0070F7AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C2BFB3B223C73B5F0070F7AA /* RunSiriUI */;
+			targetProxy = C2BFB3BD23C73B5F0070F7AA /* PBXContainerItemProxy */;
+		};
+		C2BFB3C123C73B5F0070F7AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C2BFB3A923C73B5F0070F7AA /* RunSiri */;
+			targetProxy = C2BFB3C023C73B5F0070F7AA /* PBXContainerItemProxy */;
+		};
+		C2BFB3D423C7612A0070F7AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C2BFB3CD23C7612A0070F7AA /* RunSiriCore */;
+			targetProxy = C2BFB3D323C7612A0070F7AA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C2B1BF1F23D05DA1005B2394 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C2B1BF2023D05DA1005B2394 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		C2BFB3B923C73B5F0070F7AA /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C2BFB3BA23C73B5F0070F7AA /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		C2D335B623ABDBE500D303A6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C2D335B723ABDBE500D303A6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C2D335BE23ABDBE600D303A6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C2D335BF23ABDBE600D303A6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C2B1BF3C23D05DA4005B2394 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74C5F03B36D734BA26465231 /* Pods-RunWatch Extension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "RunWatch Extension/RunWatch Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YQ63ZZYZV7;
+				INFOPLIST_FILE = "RunWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nix.QuizApp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		C2B1BF3D23D05DA4005B2394 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A9346EAF04A31B2F135EB35 /* Pods-RunWatch Extension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "RunWatch Extension/RunWatch Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YQ63ZZYZV7;
+				INFOPLIST_FILE = "RunWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nix.QuizApp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		C2B1BF4023D05DA4005B2394 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22B9AF06AF37D98FB9CDDEA5 /* Pods-RunWatch.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RunWatch/RunWatch.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YQ63ZZYZV7;
+				IBSC_MODULE = RunWatch_Extension;
+				INFOPLIST_FILE = RunWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nix.QuizApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		C2B1BF4123D05DA4005B2394 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5DD4BC027299FEADC407046 /* Pods-RunWatch.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RunWatch/RunWatch.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YQ63ZZYZV7;
+				IBSC_MODULE = RunWatch_Extension;
+				INFOPLIST_FILE = RunWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nix.QuizApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		C2BFB3C423C73B5F0070F7AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29625709A1BA4E9093353E31 /* Pods-RunSiriUI.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YQ63ZZYZV7;
+				INFOPLIST_FILE = RunSiriUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nix.QuizApp.RunSiriUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C2BFB3C523C73B5F0070F7AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 138DC8A1C832E54AC4E3367C /* Pods-RunSiriUI.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YQ63ZZYZV7;
+				INFOPLIST_FILE = RunSiriUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nix.QuizApp.RunSiriUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C2BFB3C723C73B5F0070F7AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80AD26D5DCD52ADC18D17514 /* Pods-RunSiri.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = RunSiri/RunSiri.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YQ63ZZYZV7;
+				INFOPLIST_FILE = RunSiri/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nix.QuizApp.RunSiri;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C2BFB3C823C73B5F0070F7AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FE572DD69A10A1085445A2E /* Pods-RunSiri.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = RunSiri/RunSiri.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YQ63ZZYZV7;
+				INFOPLIST_FILE = RunSiri/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nix.QuizApp.RunSiri;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C2BFB3D823C7612A0070F7AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E126BAA85182921D930868F7 /* Pods-RunSiriCore.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = YQ63ZZYZV7;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = RunSiriCore/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nix.QuizApp.RunSiriCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C2BFB3D923C7612A0070F7AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6F1CDC4BB219ED580160044 /* Pods-RunSiriCore.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = YQ63ZZYZV7;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = RunSiriCore/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nix.QuizApp.RunSiriCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C2D335C223ABDBE600D303A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C2D335C323ABDBE600D303A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C2D335C523ABDBE600D303A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72E4771D9A10E493ADAEE36D /* Pods-RunApp.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RunApp/RunApp.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YQ63ZZYZV7;
+				INFOPLIST_FILE = RunApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nix.QuizApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C2D335C623ABDBE600D303A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1B1BAB4249EB502D1A05615 /* Pods-RunApp.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RunApp/RunApp.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YQ63ZZYZV7;
+				INFOPLIST_FILE = RunApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nix.QuizApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C2B1BF3B23D05DA4005B2394 /* Build configuration list for PBXNativeTarget "RunWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2B1BF3C23D05DA4005B2394 /* Debug */,
+				C2B1BF3D23D05DA4005B2394 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2B1BF3F23D05DA4005B2394 /* Build configuration list for PBXNativeTarget "RunWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2B1BF4023D05DA4005B2394 /* Debug */,
+				C2B1BF4123D05DA4005B2394 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2BFB3C323C73B5F0070F7AA /* Build configuration list for PBXNativeTarget "RunSiriUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2BFB3C423C73B5F0070F7AA /* Debug */,
+				C2BFB3C523C73B5F0070F7AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2BFB3C623C73B5F0070F7AA /* Build configuration list for PBXNativeTarget "RunSiri" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2BFB3C723C73B5F0070F7AA /* Debug */,
+				C2BFB3C823C73B5F0070F7AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2BFB3D723C7612A0070F7AA /* Build configuration list for PBXNativeTarget "RunSiriCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2BFB3D823C7612A0070F7AA /* Debug */,
+				C2BFB3D923C7612A0070F7AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2D335A823ABDBE500D303A6 /* Build configuration list for PBXProject "RunApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2D335C223ABDBE600D303A6 /* Debug */,
+				C2D335C323ABDBE600D303A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2D335C423ABDBE600D303A6 /* Build configuration list for PBXNativeTarget "RunApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2D335C523ABDBE600D303A6 /* Debug */,
+				C2D335C623ABDBE600D303A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C2D335A523ABDBE500D303A6 /* Project object */;
+}
